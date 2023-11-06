@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,user-scalable=no, initial-scale=1"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css" />
+    <title>API DE FILMES</title>
+  </head>
+  <body>
+    <!--=== hero geral ===--->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h1>
+            Os melhores filmes<br />
+            em um só lugar.
+          </h1>
+          <input
+            class="input-buscar"
+            type="text"
+            id="nome"
+            placeholder="Digite seu filme aqui!"
+          />
+          <button class="btn-buscar" data-btn="buscar">
+            <i class="bi bi-search"></i> Buscar agora
+          </button>
+          <p class="credito">Desenvolvido por <span>wesley cunha</span></p>
+          <p class="redes-sociais">
+            <a target="_blank" href="https://www.linkedin.com/in/wesleycsv/"
+              ><i class="bi bi-linkedin"></i></a
+            ><a target="_blank" href="https://www.instagram.com/wesleycsv/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </p>
+        </div>
+        <div class="hero-right" arial-tooltip="Gardiões da Galaxia">
+          <div class="hero-right-img">
+            <img src="./src/img/rocket.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="seta-down"></div>
+    </section>
+    <!--=== App mostra filmes da lista de favoritas ===--->
+
+    <!--=== Modal para adcionar filmes ===--->
+    <div class="modal-full" data-modal="full">
+      <div class="modal">
+        <button class="close-modal" data-modal="close">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
+        <div class="modal-header"></div>
+        <div class="modal-content">
+          <div class="app"></div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <section class="lista-filmes">
+      <div class="box"></div>
+    </section>
+
+    <!--=== Load de carregamento ===--->
+    <div class="load">
+      <div class="img-load">
+        <img src="./src/img/load.gif" alt="" />
+      </div>
+    </div>
+    <footer>
+      <!--=== Credito do autor ===--->
+      <div class="coontainer">
+        <h1 class="credito-footer">
+          Sistema de consulta API de filmes, Desenvolvedor Web:
+          <span class="credito-footer-item">Wesley Cunha</span>
+        </h1>
+      </div>
+    </footer>
+    <script src="./src/js/app.js" type="module"></script>
+    <script src="./src/notie-master/dist/notie.min.js"></script>
+  </body>
+</html>
