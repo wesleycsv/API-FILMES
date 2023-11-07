@@ -10,5 +10,3 @@ Interface web de consulta, a uma API DE FILMES chamada **OMDb API** utilizando o
 
 
 ![enter image description here](https://github.com/wesleycsv/apiFilmesPro/blob/main/print.png?raw=true)
-
-Projeto desenvolvido para fins estudantis.
